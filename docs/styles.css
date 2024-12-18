@@ -124,6 +124,7 @@ button {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "box1 box1"
     "box2 box3";
@@ -131,13 +132,17 @@ button {
 
   .box-1 {
     grid-area: box1;
+    font-size: 1.5rem;
   }
   .box-2 {
     grid-area: box2;
     border-bottom-left-radius: 10px;
+    font-size: 1.1rem;
+    
   }
   .box-3 {
     grid-area: box3;
     border-bottom-left-radius: 0;
+    font-size: 1.2rem;
   }
 }
