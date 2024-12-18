@@ -78,6 +78,7 @@ body {
 .dollar {
   color: white;
   font-size: 2rem;
+  font-weight: var(--lg-weight);
 }
 .daily-fee {
   color: white;
@@ -95,6 +96,7 @@ button {
   position: relative;
   bottom: 3em;
   box-shadow: rgb(77, 76, 76) 0 10px 30px;
+  font-weight: var(--lg-weight);
 }
 
 
@@ -118,3 +120,25 @@ button {
 /* Author DIv */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "box1 box1"
+    "box2 box3";
+  }
+
+  .box-1 {
+    grid-area: box1;
+  }
+  .box-2 {
+    grid-area: box2;
+    border-bottom-left-radius: 10px;
+  }
+  .box-3 {
+    grid-area: box3;
+    border-bottom-left-radius: 0;
+  }
+}
