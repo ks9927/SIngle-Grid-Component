@@ -95,7 +95,6 @@ button {
   border-radius: 5px;
   position: relative;
   bottom: 3em;
-  box-shadow: rgb(77, 76, 76) 0 10px 30px;
   font-weight: var(--lg-weight);
 }
 
